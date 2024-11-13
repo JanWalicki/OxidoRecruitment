@@ -22,8 +22,15 @@ async function generateHtmlFromArticle(articleText)
             - Use <strong> and <em> tags for emphasis.
         2. Add placeholders for images in relevant sections of the article using <img src="image_placeholder.jpg" alt="...">.
             - Use detailed descriptions for the alt attribute that would effectively guide an AI image generation tool.
+            - Always make a detailed medium to long prompt including style, content and details for AI to generate image representing a text conent. 
+            - If possible include images beside of a paragraph not beside of heading.
+            - always: src="image_placeholder.jpg".
+            - avoid images beside of small paragraph.
         3. Do not include CSS, JavaScript, or any content outside the <body> tags.
         4. Avoid including <html>, <head>, or <body> tags in the final output. Only include content that would go between <body> and </body>.
+        5. Always put output between <article></article> tags to represent it is an article
+        6. Add classes to help styling "title", "article-image", "article", "article-pharagraph", "subtitle".
+        7. At the end write author if found in original article with class "author".
 
         Ensure that the generated code is clean, adheres to these instructions, and is suitable for a structured, content-rich article.`
 

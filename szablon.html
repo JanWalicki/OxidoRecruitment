@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artykuły</title>
+
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          color: #ddd;
+          background-color: #121212;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
+        
+        article {
+          max-width: 800px;
+          padding: 20px;
+          background-color: #1e1e1e;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+          margin: 20px;
+        }
+      
+
+        .title, .subtitle {
+          color: #ffffff;
+          text-align: center;
+          margin-block: 50px;
+        }
+      
+
+        .article-paragraph {
+          line-height: 1.6;
+          color: #ddd;
+        }
+        
+
+        .article-image {
+        max-width: 48%;
+        margin: 10px 0;
+        border-radius: 8px;
+        display: inline-block; 
+        }
+
+
+        .article-image:nth-of-type(odd) {
+        float: left;
+        margin-right: 20px;
+        }
+
+        .article-image:nth-of-type(even) {
+        float: right;
+        margin-left: 20px;
+        }
+
+        .article-paragraph::after, .subtitle::after {
+        content: "";
+        display: block;
+        clear: both;
+        }
+
+        .author
+        {
+            font-style: italic;
+            color: #9b9b9b;
+        }
+        
+
+        @media (max-width: 768px) {
+          .article-image {
+            max-width: 100%;
+            float: none;
+            margin: 10px 0;
+          }
+        }
+      </style>
+</head>
+<body>
+
+
+
+</body>
+</html>
